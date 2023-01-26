@@ -654,13 +654,13 @@ a p {
   }
 
 .little:nth-child(1) {
-    background: url(../img/Металлообратотка/слайд/до.jpg);
+    background: url(../img/Металлообработка/слайд/до.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .little:nth-child(2) {
-    background: url(../img/Металлообратотка/слайд/после.jpg);
+    background: url(../img/Металлообработка/слайд/после.jpg);
     background-position: center;
     background-size: cover;
 }
