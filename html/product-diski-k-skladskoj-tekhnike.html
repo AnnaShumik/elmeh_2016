@@ -4,208 +4,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ООО "ЭлМех"</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style_main.css">
+    <title>OOO "ЭлМех"</title>
+    <link rel="icon" type="image/png" href="/img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style_main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.4/jquery.simplePagination.min.js"></script>   
     <!-- Подключаем CSS и JS слайдера -->
-    <link rel="stylesheet" href="../css/simple-adaptive-slider.min.css">
-    <script src="../js/simple-adaptive-slider.min.js"></script> 
+    <link rel="stylesheet" href="/css/simple-adaptive-slider.min.css">
+    <script src="/js/simple-adaptive-slider.min.js"></script> 
     <!-- Подключаем CSS и JS модального окна -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <!-- Подключаем CSS и JS пагинацию страниц -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.4/simplePagination.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.4/jquery.simplePagination.min.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <div class="logo">
-                            <img src="../img/logo.png" alt="logo">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent text-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand w-70 bd-highlight" href="/index.html"><img src="/img/logo.png" alt="logo"></a>
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"> 
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse p-2 flex-shrink-1 bd-highlight" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " href="/index.html">Главная</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Категории </a>
+                                <ul class="dropdown-menu border border-white" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/html/products.html">Товары</a></li>
+                                    <li><a class="dropdown-item" href="/html/services.html">Услуги</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/html/about_us.html">О компании</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/html/contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link p-2 bd-highlight">
+                        <a href="https://www.instagram.com/elmeh_2016/" target="_blank"> <img src="/img/instagram.png" alt="instagram"> elmeh_2016</a>
+                        <div class="more">
+                            <div class="arrow"> &#129094 </div>
+                            <p> узнать больше</p>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="col-md-12">
-                            <nav class="menu">
-                                <ul>
-                                    <li class="menu-item"> <a href="../index.html"> Главная </a> </li>                    
-                                    <li class="menu-item"> <a href="#"> Категории </a> 
-                                        <ul class="drop-down_list">
-                                            <li class="list"> <a href="products.html"> Товары </a> </li>
-                                            <li class="list"> <a href="services.html"> Услуги </a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item"> <a href="about_us.html"> О компании </a> </li>
-                                    <li class="menu-item"> <a href="contacts.html"> Контакты </a> </li>
-                                    <li class="menu-item"> <img src="../img/instagram.png" alt="instagram"><a href="https://www.instagram.com/elmeh_2016/" target="_blank"> elmeh_2016</a> </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="more">
-                                <p> больше</p>
-                                <div class="arrow"></div>
-                            </div>  
-                        </div>
-                        <div class="phone">
+                    <div class="container number">
+                        <div class="phone col-auto">
+                            <div class="links d-flex justify-content-evenly">
+                                <a href="tel:+375333844944"> <img src="/img/мтс.png" alt="mts"> </a>
+                                <a href="viber://chat?number=375333844944"> <img src="/img/Viber.png" alt="viber"> </a>
+                                <a href="https://t.me/+375333844944"> <img src="/img/телеграм.png" alt="telegram"> </a>
+                                <a href="https://api.whatsapp.com/send?phone=375333844944"> <img src="/img/whatsApp.png" alt="whatsApp"> </a> 
+                            </div>
                             <a href="tel:+375333844944">+ 375 33 384 49 44</a>
-                            <div class="links">
-                                <img src="../img/мтс.png" alt="mts"> <img src="../img/Viber.png" alt="viber"> <img src="../img/телеграм.png" alt="telegram"> <img src="../img/whatsApp.png" alt="whatsApp">
+                        </div>   
+                        <div class="phone col-auto">
+                            <div class="links d-flex justify-content-evenly">
+                                <a href="tel:+375336755955"> <img src="/img/мтс.png" alt="mts"> </a>
+                                <a href="viber://chat?number=375336755955"> <img src="/img/Viber.png" alt="viber"> </a>
+                                <a href="https://t.me/+375336755955"> <img src="/img/телеграм.png" alt="telegram"> </a>
+                                <a href="https://api.whatsapp.com/send?phone=375336755955"> <img src="/img/whatsApp.png" alt="whatsApp"> </a> 
                             </div>
                             <a href="tel:+375336755955">+ 375 33 675 59 55</a>
-                        </div>
+                        </div> 
                     </div>
                 </div>
-        </div>
+            </div>
+        </nav>
     </header> 
     <section class="catalog">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2">
+            <div class="row-catalog">
+                <div class="col-fluid">
                     <div class="list-group">
-                        <p> <a href="products.html"> Товары </a> </p>
+                        <p> <a href="/html/products.html"> Товары </a> </p>
                         <div class="line-list"></div>
                         <ul>
-                            <li> <a href="product-kolesa-i-shiny-k-skladskoj-tekhnike.html" class="list-group-item">Колеса и шины к складской технике</a> </li>
-                            <li> <a href="product-shiny-k-selskokhozyajstvennoj-tekhniki.html" class="list-group-item">Шины к с/х техники</a> </li>
-                            <li> <a href="product-diski-k-skladskoj-tekhnike.html" class="list-group-item"> <strong> Диски к складской технике</strong></a> </li>
+                            <li> <a href="/html/product-kolesa-i-shiny-k-skladskoj-tekhnike.html" class="list-group-item">Колеса и шины к складской технике</a> </li>
+                            <li> <a href="/html/product-shiny-k-selskokhozyajstvennoj-tekhniki.html" class="list-group-item">Шины к с/х техники</a> </li>
+                            <li> <a href="/html/product-diski-k-skladskoj-tekhnike.html" class="list-group-item"> <strong> Диски к складской технике</strong></a> </li>
                         </ul>
                     </div>
                 </div>
-                <div class="container">
-                    <div> 
-                        <h1> Диски к складской технике</h1>
-                        <div class="description">
-                            <p> Система комбинированных сборных дисков для погрузочной техники </p>
-                        </div>
+                <div class="container-fluid"> 
+                    <h1> Диски к складской технике</h1>
+                    <div class="description">
+                        <p> Система комбинированных сборных дисков для погрузочной техники </p>
                     </div>
                     <div class="container-product">
-                        <div class="row justify-content-md-center">
-                            <div class="col-3 card-product">
-                                <div class="shape">
-                                    <div class="name-card product"> 
-                                        <a class="display"
-                                        data-caption="Колесо стальное D8. Производитель: STARCO"
-                                        data-fancybox="gallery-disk1"
-                                        href="../img/товары/диски/Колесо стальное D8.png"> 
-                                            <img class="rounded" src="../img/товары/диски/колесо стальное.png" alt="колесо стальное"> <p> Колесо стальное "8. Подробнее... </p> 
-                                        </a>
-                                        <!--дополнительные фото-->
-                                        <a class="none"
-                                        data-caption="Диаметр диска 8"
-                                        data-fancybox="gallery-disk1"
-                                        href="../img/товары/диски/диаметр диска 8.png">
-                                            <img class="rounded" src="../img/товары/диски/диаметр диска 8.png" alt="таблица размеров">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 card-product">
-                                <div class="shape">
-                                    <div class="name-card product"> 
-                                        <a class="display"
-                                        data-caption="Колесо стальное D9. Производитель: STARCO"
-                                        data-fancybox="gallery-disk2"
-                                        href="../img/товары/диски/Колесо стальное D9.png">
-                                            <img class="rounded" src="../img/товары/диски/колесо стальное.png" alt="колесо стальное"> <p> Колесо стальное "9. Подробнее... </p>
-                                        </a>
-                                        <!--дополнительные фото-->
-                                        <a class="none"
-                                        data-caption="Диаметр диска 9"
-                                        data-fancybox="gallery-disk2"
-                                        href="../img/товары/диски/диаметр диска 9.png"
-                                        >
-                                            <img class="rounded" src="../img/товары/диски/диаметр диска 9.png" alt="таблица размеров">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 card-product">
-                                <div class="shape">
-                                    <div class="name-card product"> 
-                                        <a class="display"
-                                        data-caption="Колесо стальное D10. Производитель: STARCO"
-                                        data-fancybox="gallery-disk3"
-                                        href="../img/товары/диски/Колесо стальное D10.png">
-                                            <img class="rounded" src="../img/товары/диски/колесо стальное.png" alt="колесо стальное"> <p> Колесо стальное "10. Подробнее... </p>
-                                        </a>
-                                        <!--дополнительные фото-->
-                                        <a class="none"
-                                        data-caption="Диаметр диска 10"
-                                        data-fancybox="gallery-disk3"
-                                        href="../img/товары/диски/диаметр диска 10.png">
-                                            <img class="rounded" src="../img/товары/диски/диаметр диска 10.png" alt="таблица размеров">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 card-product">
-                                <div class="shape">
-                                    <div class="name-card product"> 
-                                        <a class="display"
-                                        data-caption="Колесо стальное D12. Производитель: STARCO"
-                                        data-fancybox="gallery-disk4"
-                                        href="../img/товары/диски/Колесо стальное D12.png">
-                                            <img class="rounded" src="../img/товары/диски/колесо стальное.png" alt="колесо стальное"> <p> Колесо стальное "12. Подробнее... </p>
-                                        </a>
-                                        <!--дополнительные фото-->
-                                        <a class="none"
-                                        data-caption="Диаметр диска 12"
-                                        data-fancybox="gallery-disk4"
-                                        href="../img/товары/диски/диаметр диска 12.png">
-                                            <img class="rounded" src="../img/товары/диски/диаметр диска 12.png" alt="таблица размеров">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 card-product">
-                                <div class="shape">
-                                    <div class="name-card product"> 
-                                        <a class="display"
-                                        data-caption="Колесо стальное D16,5. Производитель: STARCO"
-                                        data-fancybox="gallery-disk5"
-                                        href="../img/товары/диски/Колесо стальное D16,5.png">
-                                            <img class="rounded" src="../img/товары/диски/колесо стальное.png" alt="колесо стальное"> <p> Колесо стальное "16,5. Подробнее... </p>
-                                        </a>
-                                        <!--дополнительные фото-->
-                                        <a class="none"
-                                        data-caption="Диаметр диска 16,5"
-                                        data-fancybox="gallery-disk5"
-                                        href="../img/товары/диски/диаметр диска 16,5.png">
-                                            <img class="rounded" src="../img/товары/диски/диаметр диска 16,5.png" alt="таблица размеров">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 card-product">
-                                <div class="shape">
-                                    <div class="name-card product"> 
-                                        <a class="display"
-                                        data-caption="Колесо стальное 13.00X15.5 6/161/205 ET-15 R16 H2 VG7 RFH Silver RAL9006. Производитель: STARCO"
-                                        data-fancybox="gallery-disk6"
-                                        href="../img/товары/диски/Колесо стальное 13.00X15.5.png">
-                                            <img class="rounded" src="../img/товары/диски/колесо стальное.png" alt="колесо стальное"> <p> Колесо стальное 13.00X15.5 6/161/205 ET-15 R16 H2 VG7 RFH Silver RAL9006. Производитель: STARCO </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 card-product">
-                                <div class="shape">
-                                    <div class="name-card product">                                   
-                                        <a class="display"
-                                        data-caption="Колесо стальное 13.00X15.5 6/161/205 ET-15 R16 H2 VG7 RFH Silver RAL9006. Производитель: STARCO"
-                                        data-fancybox="gallery-disk7"
-                                        href="../img/товары/диски/Колесо стальное 16.00X17.png">
-                                            <img class="rounded" src="../img/товары/диски/колесо стальное.png" alt="колесо стальное"> <p> Колесо стальное 16.00X17 8/221/275 ET0 R16 VG3 H2 Silver RAL9006 STARCO 557885 475040. Производитель: STARCO </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="shape">
+                            <a class="display"
+                                data-caption="Колесо стальное D8. Производитель: STARCO"
+                                data-fancybox="gallery-disk"
+                                href="/img/товары/диски/Колесо стальное D8.png">
+                                <img class="roundeds" src="/img/товары/диски/колесо стальное.png" alt="колесо стальное">
+                            </a>
                         </div>
-                        <div id="pagination-container-none"></div>
+                        <ul class="list">
+                            <li>
+                                <a class="display"
+                                    data-caption="Колесо стальное D8. Производитель: STARCO"
+                                    data-fancybox="gallery-disk1"
+                                    href="/img/товары/диски/диаметр диска 8.png">
+                                    <p> Колесо стальное "8. Подробнее... </p> 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="display"
+                                    data-caption="Колесо стальное D9. Производитель: STARCO"
+                                    data-fancybox="gallery-disk2"
+                                    href="/img/товары/диски/диаметр диска 9.png">
+                                    <p> Колесо стальное "9. Подробнее... </p> 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="display"
+                                    data-caption="Колесо стальное D10. Производитель: STARCO"
+                                    data-fancybox="gallery-disk3"
+                                    href="/img/товары/диски/диаметр диска 10.png">
+                                    <p> Колесо стальное "10. Подробнее... </p> 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="display"
+                                    data-caption="Колесо стальное D12. Производитель: STARCO"
+                                    data-fancybox="gallery-disk4"
+                                    href="/img/товары/диски/диаметр диска 12.png">
+                                    <p> Колесо стальное "12. Подробнее... </p> 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="display"
+                                    data-caption="Колесо стальное D16,5. Производитель: STARCO"
+                                    data-fancybox="gallery-disk5"
+                                    href="/img/товары/диски/диаметр диска 16,5.png">
+                                    <p> Колесо стальное "16,5. Подробнее... </p> 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="display"
+                                    data-caption="Колесо стальное 13.00X15.5 6/161/205 ET-15 R16 H2 VG7 RFH Silver RAL9006. Производитель: STARCO">
+                                    <p> Колесо стальное 13.00X15.5 6/161/205 ET-15 R16 H2 VG7 RFH Silver RAL9006. Производитель: STARCO </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="display"
+                                    data-caption="Колесо стальное 13.00X15.5 6/161/205 ET-15 R16 H2 VG7 RFH Silver RAL9006. Производитель: STARCO">
+                                    <p> Колесо стальное 16.00X17 8/221/275 ET0 R16 VG3 H2 Silver RAL9006 STARCO 557885 475040. Производитель: STARCO </p>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -228,7 +186,7 @@
                     <div class="bottom">
                         <p class="text-ps"> Адрес 
                             <ul>
-                                <li> <a href="https://goo.gl/maps/vWutZ9K9G4Rr897t6" target="_blank" rel="noopener noreferrer"><img src="../img/Точка карты.png" alt="map"> г. Брест, ул. Красногвардейская 112, офис 100 </a> </li>
+                                <li> <a href="https://goo.gl/maps/vWutZ9K9G4Rr897t6" target="_blank" rel="noopener noreferrer"><img src="../img/Точка карты.png" alt="map"> г. Брест, ул. Красногвардейская 112/1 </a> </li>
                                 <li> Время работы: Пн. - Пт. с 9.00 до 17.30</li>
                             </ul>
                         </p>
@@ -252,6 +210,5 @@
             </script> </p> 
         </div>
     </footer>
-    <script src="../js/main.js"></script>    
 </body>
 </html>

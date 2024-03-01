@@ -23,6 +23,7 @@ function resort(selector) {
 
 resort('.card-product');
 
+
 /*модальное окно*/
 Fancybox.bind('[data-fancybox="gallery"]', {
   Thumbs: false,
@@ -36,7 +37,7 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   },
 });
 
-/*пагинация*/
+/*пагинация слайд снизу*/
 var items = $(".card-product .shape");
     var numItems = items.length;
     var perPage = 12;
@@ -54,3 +55,6 @@ var items = $(".card-product .shape");
             items.hide().slice(showFrom, showTo).show();
         }
     });
+
+    
+
